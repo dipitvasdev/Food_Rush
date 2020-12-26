@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/forgot_Progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Reset Password"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editTextOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#eeeeee"
+                android:drawableStart="@drawable/ic_otp"
+                android:drawablePadding="4dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="OTP (Min 4 Characters)"
+                android:inputType="number|text"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                 />
+
+            <EditText
+                android:id="@+id/etNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#eeeeee"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="4dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="New Password (Min 6 Characters)"
+                android:inputType="textPassword"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                 />
+
+            <EditText
+                android:id="@+id/etConfirmPasswordForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#eeeeee"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="4dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="Confirm Password (Min 6 Characters)"
+                android:inputType="textPassword"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/colorHighlight"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:theme="@style/Widget.MaterialComponents.Button" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
